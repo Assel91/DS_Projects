@@ -81,7 +81,7 @@ def score_game(predict_number)-> int:
         int: количество попыток
     """
     count_ls = [] #Список для сохранения попыток
-    np.random.seed(1) #Фиксируем сид для воспроизводимости
+    # np.random.seed(1) #Фиксируем сид для воспроизводимости
     random_array = np.random.randint(1, 101, size = 1000) #Создаем список из 1000 случайных чисел 
     
     for number in random_array:
